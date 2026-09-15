@@ -546,56 +546,24 @@ Content-Type: application/json
 | **Campo** | **Descrição** |
 | --- | --- |
 | **Pré-condição** | Administrador autenticado no painel web com acesso ao recurso responsável pela configuração de integrações. |
-| **Ação** | 1. Acessar o recurso de gerenciamento de integrações.
-2. Clicar em "Criar nova integração".
-3. Selecionar o serviço externo desejado.
-4. Informar os dados necessários para identificação e utilização da integração.
-5. Clicar em "Conectar conta".
-6. Realizar o processo de autenticação e autorização no serviço externo.
-7. Retornar ao painel administrativo.
-8. Verificar o status da conexão.
-9. Selecionar as operações que estarão disponíveis para utilização.
-10. Clicar em "Salvar". |
-| **Resultado esperado** | • O formulário é apresentado corretamente, com textos de apoio, labels e placeholders esperados.
-• O fluxo de autenticação é iniciado corretamente.
-• A autorização é concluída sem erros.
-• As informações da conta autenticada são apresentadas corretamente após o retorno ao sistema.
-• O status da integração é atualizado para "Conectado".
-• As operações selecionadas são salvas corretamente.
-• A integração é associada exclusivamente à unidade/tenant do administrador autenticado.
-• A configuração permanece disponível após atualizar a página. |
+| **Ação** | 1. Acessar o recurso de gerenciamento de integrações.<br>2. Clicar em "Criar nova integração".<br>3. Selecionar o serviço externo desejado.<br>4. Informar os dados necessários para identificação e utilização da integração.<br>5. Clicar em "Conectar conta".<br>6. Realizar o processo de autenticação e autorização no serviço externo.<br>7. Retornar ao painel administrativo.<br>8. Verificar o status da conexão.<br>9. Selecionar as operações que estarão disponíveis para utilização.<br>10. Clicar em "Salvar". |
+| **Resultado esperado** | • O formulário é apresentado corretamente, com textos de apoio, labels e placeholders esperados.<br>• O fluxo de autenticação é iniciado corretamente.<br>• A autorização é concluída sem erros.<br>• As informações da conta autenticada são apresentadas corretamente após o retorno ao sistema.<br>• O status da integração é atualizado para "Conectado".<br>• As operações selecionadas são salvas corretamente.<br>• A integração é associada exclusivamente à unidade/tenant do administrador autenticado.<br>• A configuração permanece disponível após atualizar a página. |
 
 ### T02 - Validação de Operações Disponíveis
 
 | **Campo** | **Descrição** |
 | --- | --- |
 | **Pré-condição** | Integração conectada e com diferentes operações configuradas. |
-| **Ação** | 1. Acessar a configuração da integração.
-2. Habilitar uma operação específica.
-3. Salvar a configuração.
-4. Utilizar o recurso consumidor.
-5. Executar a operação habilitada.
-6. Desabilitar a operação.
-7. Salvar novamente.
-8. Tentar executar a mesma operação. |
-| **Resultado esperado** | • Apenas as operações habilitadas ficam disponíveis para utilização.
-• Alterações nas operações são persistidas corretamente.
-• Operações desabilitadas não podem ser executadas pelo recurso consumidor.
-• O sistema apresenta uma mensagem adequada quando uma operação indisponível é solicitada. |
+| **Ação** | 1. Acessar a configuração da integração.<br>2. Habilitar uma operação específica.<br>3. Salvar a configuração.<br>4. Utilizar o recurso consumidor.<br>5. Executar a operação habilitada.<br>6. Desabilitar a operação.<br>7. Salvar novamente.<br>8. Tentar executar a mesma operação. |
+| **Resultado esperado** | • Apenas as operações habilitadas ficam disponíveis para utilização.<br>• Alterações nas operações são persistidas corretamente.<br>• Operações desabilitadas não podem ser executadas pelo recurso consumidor.<br>• O sistema apresenta uma mensagem adequada quando uma operação indisponível é solicitada. |
 
-### T04 - Fluxo 4: Erro durante a Autenticação
+### T03 Erro durante a Autenticação
 
 | **Campo** | **Descrição** |
 | --- | --- |
 | **Pré-condição** | Administrador autenticado e integração disponível para configuração. |
-| **Ação** | 1. Iniciar o processo de conexão com o serviço externo.
-2. Interromper ou cancelar o processo de autenticação.
-3. Retornar ao painel administrativo. |
-| **Resultado esperado** | • O sistema identifica que a autenticação não foi concluída.
-• A integração não é apresentada como conectada indevidamente.
-• O status permanece como pendente ou é atualizado para o estado de erro correspondente.
-• O usuário recebe uma mensagem clara orientando sobre o próximo passo.
-• Nenhum registro incompleto ou credencial inválida é persistido indevidamente. |
+| **Ação** | 1. Iniciar o processo de conexão com o serviço externo.<br>2. Interromper ou cancelar o processo de autenticação.<br>3. Retornar ao painel administrativo. |
+| **Resultado esperado** | • O sistema identifica que a autenticação não foi concluída.<br>• A integração não é apresentada como conectada indevidamente.<br>• O status permanece como pendente ou é atualizado para o estado de erro correspondente.<br>• O usuário recebe uma mensagem clara orientando sobre o próximo passo.<br>• Nenhum registro incompleto ou credencial inválida é persistido indevidamente. |
 
 ### **12. Acessibilidade (a11y)**
 
